@@ -2,12 +2,19 @@
 
 Trata-se de um jogo básico onde um número é gerado aleatoriamente e o jogador deve dar palpites para acertar o número gerado de acordo com as instruções oferecidas.
 
-![](https://github.com/facarlos90/numero-secreto/blob/main/capa.png)
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Jogo do Número Secreto**
+| :label: Tecnologias | html, css, javascript
+| :rocket: URL         | https://facarlos90.github.io/numero-secreto/
+| :fire: Desafio     | 
+
+![](https://github.com/facarlos90/numero-secreto/blob/main/capa.png#vitrinedev)
 
 ## Detalhes do projeto
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge"/>
 </p>
 
 Projeto em desenvolvimento para colocar em prática e fixar os conhecimentos adquiridos nos Cursos "Lógica de programação: explore funções e listas" da Alura. 
@@ -17,7 +24,7 @@ Através do uso de JavaScript os elementos da página como palavras, números e 
 # :hammer: Funcionalidades do projeto
 
 - `Funcionalidade 1`: Associar o JavaScript com HTML através do DOM e implementar funções com JavaScript.
-- `Funcionalidade 2`: Criar manipulações de palavras e números de forma dinâmica com JavaScript.
+- `Funcionalidade 2`: Criar manipulações de palavras, imagens e números de forma dinâmica com JavaScript.
 - `Funcionalidade 3`: Gerar um número aleatório; pedir para o usuário digitar um número; comparar para ver se é o mesmo número; finalizar o jogo caso seja ou dar a dica para o usuário digitar um número maior ou menor, caso não seja o número gerado.
 
 # 📁 Acesso ao projeto
