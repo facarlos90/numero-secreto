@@ -17,15 +17,22 @@ Trata-se de um jogo básico onde um número é gerado aleatoriamente e o jogador
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge"/>
 </p>
 
-Projeto em desenvolvimento para colocar em prática e fixar os conhecimentos adquiridos nos Cursos "Lógica de programação: explore funções e listas" da Alura. 
+Projeto em desenvolvimento para colocar em prática e fixar os conhecimentos adquiridos no Curso "Lógica de programação: explore funções e listas" da Alura. 
 
 Através do uso de JavaScript os elementos da página como palavras, números e imagens, serão manipulados na tela.
 
+# :notebook: Tecnologias Utilizadas:
+- `Tecnologia 1`: HTML5 - Estrutura do jogo e elementos visuais.
+- `Tecnologia 2`: CSS3 - Estilização responsiva e atraente.
+- `Tecnologia 3`: JavaScript - Lógica do jogo e interação do usuário.
+- `Tecnologia 4`: ResponsiveVoice.js - Feedback de voz para uma experiência mais imersiva.
+
 # :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: Associar o JavaScript com HTML através do DOM e implementar funções com JavaScript.
-- `Funcionalidade 2`: Criar manipulações de palavras, imagens e números de forma dinâmica com JavaScript.
-- `Funcionalidade 3`: Gerar um número aleatório; pedir para o usuário digitar um número; comparar para ver se é o mesmo número; finalizar o jogo caso seja ou dar a dica para o usuário digitar um número maior ou menor, caso não seja o número gerado.
+- `Funcionalidade 1`: Interface amigável e responsiva.
+- `Funcionalidade 2`: Dicas para ajudar a adivinhar o número secreto.
+- `Funcionalidade 3`: Feedback visual e por voz para cada tentativa.
+- `Funcionalidade 4`: Opção de reiniciar o jogo.
 
 # 📁 Acesso ao projeto
 
