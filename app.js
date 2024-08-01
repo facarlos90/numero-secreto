@@ -1,24 +1,30 @@
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
+let imagem = document.querySelector('img').src='./img/paul_frente.png';
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function exibirMensagemInicial () {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
-    document.querySelector('img').src='./img/paul_frente.png';
+    trocaImagem();
 }
 
 exibirMensagemInicial();
 
-function trocaImagem(acertou) {
-    if (acertou) {
-        document.querySelector('img').src='./img/paul_win.png';
+function trocaImagem(chute) {
+    if (chute === undefined || chute === '') {
+        document.querySelector('img').src = './img/paul_frente.png';
+    } else if (chute == numeroSecreto) {
+        document.querySelector('img').src = './img/paul_win.png';
     } else {
-        document.querySelector('img').src='./img/paul_loser.png';
+        document.querySelector('img').src = './img/paul_loser.png';
     }
 }
 
@@ -30,11 +36,11 @@ function verificarChute() {
         let palavraTentativa = tentativas > 1 ? 'tentativas': 'tentativa';
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela('p', mensagemTentativas);
-        trocaImagem(true);
+        trocaImagem(chute);
         document.getElementById('reiniciar').removeAttribute('disabled')
     } else {
         exibirTextoNaTela('h1', 'Você Errou! Mas tente novamente...');
-        trocaImagem(false);
+        trocaImagem(chute);
         if (chute > numeroSecreto) {
             exibirTextoNaTela('p', 'Dica: O número secreto é menor!');
         } else {
@@ -46,7 +52,19 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 10 +1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
+
+    if (quantidadeDeElementosNaLista == numeroLimite) {
+        listaDeNumerosSorteados = [];
+    }
+    if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+        return gerarNumeroAleatorio();
+    } else {
+        listaDeNumerosSorteados.push(numeroEscolhido);
+        console.log(listaDeNumerosSorteados);
+        return numeroEscolhido;
+    }
 }
 
 function limparCampo() {
